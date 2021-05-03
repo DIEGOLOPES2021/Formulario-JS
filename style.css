@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.2em 'Times New Roman';
+}
+h1{
+    text-align: center;
+    color: aqua;
+}
+
+#title {
+    
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+#section {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 25px;
+}
+
+.info {
+    width: 90vw;
+    height: inherit;
+    flex-direction: column;
+    align-items: center;
+}
+
+.requisitos {
+    width: 90vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    align-items: center;
+    
+}
+
+.itens{
+    width: 247px;
+    height: inherit;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cadastro>input {
+    width: 50vw;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 1;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: inherit;
+    margin: 5px 5px 5px 5px;
+    margin-bottom: 20px;
+}
+
+.table{
+    width: 90vw;
+    height: 5vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+:root {
+    --backgroundColor: rgb(226, 18, 18);
+    --colorShadeA: rgb(255, 255, 255);
+    --colorShadeB: rgb(0, 0, 0);
+    --colorShadeC: rgb(0, 0, 0);
+    --colorShadeD: rgb(10, 10, 10);
+    --colorShadeE: rgb(10, 10, 10);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+input[type='button'] {
+    margin-bottom: auto;
+    margin-left: auto;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: var(--colorShadeA);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+input.button {
+    margin-bottom: auto;
+    margin-left: auto;
+    padding: 1em 2em;
+    border: 2px solid var(--colorShadeA);
+    border-radius: 1em;
+    background: var(--colorShadeE);
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+input.button::before {
+    
+    background: var(--colorShadeC);
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
+    margin-bottom: auto;
+    margin-left: auto;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+
+input.button:hover {
+    background: var(--colorShadeD);
+    transform: translate(0, 0.375em);
+}
+
+input.button:hover::before {
+    transform: translate3d(0, 0.75em, -1em);
+}
+
+input.button:active {
+    transform: translate(0em, 0.75em);
+}
+
+input.button:active::before {
+    transform: translate3d(0, 0, -1em);
+
+    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+
+}
+
+.buttonExcluir {
+    margin-bottom: auto;
+    margin-left: auto;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: var(--colorShadeA);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+.buttonExcluir {
+    margin-bottom: auto;
+    margin-left: auto;
+    padding: 1em 2em;
+    border: 2px solid var(--colorShadeA);
+    border-radius: 1em;
+    background: var(--colorShadeE);
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+.buttonExcluir{
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: var(--colorShadeA);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: inherit;
+    margin-right: 30px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+
+}
+.buttonEditar {
+    margin-bottom: auto;
+    margin-left: auto;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: var(--colorShadeA);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+.buttonEditar {
+    margin-bottom: auto;
+    margin-left: auto;
+    padding: 1em 2em;
+    border: 2px solid var(--colorShadeA);
+    border-radius: 1em;
+    background: var(--colorShadeE);
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+.buttonEditar{
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: inherit;
+    margin-right: 30px;
+}
+
